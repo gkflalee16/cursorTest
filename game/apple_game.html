@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사과 게임</title>
+    <link rel="stylesheet" href="apple_game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score">점수: <span id="score">0</span></div>
+        
+        <div class="instructions">
+            <strong>게임 방법:</strong><br>
+            마우스를 움직여서<br>
+            바구니로 사과를 받으세요!<br>
+            사과를 놓치면 게임 오버
+        </div>
+
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+
+        <div class="basket" id="basket"></div>
+        
+        <div class="game-over" id="gameOver">
+            <h2>게임 오버!</h2>
+            <p>최종 점수: <span id="finalScore">0</span></p>
+            <button class="restart-btn" onclick="restartGame()">다시 시작</button>
+        </div>
+    </div>
+
+    <script src="apple_game.js"></script>
+</body>
+</html>
